@@ -33,24 +33,7 @@ public class project16 {
         {
             for(i=0;i< num;i++)
             {
-                if(remain[i]>qunt)
-                {
-                    remain[i]=remain[i]-qunt;
-                    for(j=0;j< num;j++)
-                    {
-                        if((j!=i)&&(remain[j]!=0))
-                            waiting[j]+=qunt;
-                    }
-                }
-                else
-                {
-                    for(j=0;j< num;j++)
-                    {
-                        if((j!=i)&&(remain[j]!=0))
-                            waiting[j]+=remain[i];
-                    }
-                    remain[i]=0;
-                }
+                
             }
             sum=0;
             for(k=0;k< num;k++)
